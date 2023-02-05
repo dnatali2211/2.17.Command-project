@@ -1,1 +1,0 @@
-# javaqa-team-diplom-2
