@@ -22,13 +22,13 @@ public class SavingAccountTest {
     @Test
     public void testOverAddBalanceEqualsMax() {
         SavingAccount account = new SavingAccount(
-                5_000,
+                4_000,
                 1_000,
                 10_000,
                 5
         );
 
-        account.add(5_000);
+        account.add(6_000);
 
         Assertions.assertEquals(5_000 + 5_000, account.getBalance());
     }
