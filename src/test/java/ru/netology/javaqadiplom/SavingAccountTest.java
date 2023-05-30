@@ -30,7 +30,7 @@ public class SavingAccountTest {
 
         account.add(6_000);
 
-        Assertions.assertEquals(5_000 + 5_000, account.getBalance());
+        Assertions.assertEquals(4_000 + 6_000, account.getBalance());
     }
 
     @Test
