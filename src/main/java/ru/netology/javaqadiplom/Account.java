@@ -12,10 +12,18 @@ public class Account {
     }
 
     public boolean pay(int amount) {
+        if (amount <= balance) {
+            balance = balance - amount;
+            return true;
+        }
         return false;
     }
 
     public boolean add(int amount) {
+        if (amount > 0) {
+            balance = balance + amount;
+            return true;
+        }
         return false;
     }
 
