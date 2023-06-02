@@ -98,7 +98,7 @@ class BankTest {
     }
 
     @Test
-    public void testFailedWhenToNull() {
+    public void testSuccessWhenToNull() {
 
         Account accountFrom = new Account(800);
         Account accountTo = new Account(0);
