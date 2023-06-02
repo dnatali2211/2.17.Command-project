@@ -4,6 +4,13 @@ public class Account {
     protected int balance;
     protected int rate;
 
+    public Account() {
+    }
+
+    public Account(int balance) {
+        this.balance = balance;
+    }
+
     public boolean pay(int amount) {
         return false;
     }
