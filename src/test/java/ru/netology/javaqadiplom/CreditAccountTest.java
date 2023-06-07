@@ -155,6 +155,20 @@ public class CreditAccountTest {
     }
 
     @Test
+    public void shouldCountYearChangeIfNegativeBalanceAndHighRate() {
+
+        CreditAccount account = new CreditAccount(
+                0,
+                5_000,
+                80
+        );
+
+        account.pay(99);
+
+        Assertions.assertEquals(-79, account.yearChange());
+    }
+
+    @Test
     public void shouldCountYearChangeIfPositiveBalance() {
 
         CreditAccount account = new CreditAccount(

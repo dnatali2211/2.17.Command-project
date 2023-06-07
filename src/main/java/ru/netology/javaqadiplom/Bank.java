@@ -18,7 +18,7 @@ public class Bank {
         if (amount <= 0) {
             return false;
         }
-        if (from.getBalance() >= amount && (from.pay(amount))) {
+        if (from.pay(amount)) {
             to.add(amount);
             return true;
         }
