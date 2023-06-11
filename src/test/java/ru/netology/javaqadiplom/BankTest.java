@@ -136,5 +136,18 @@ class BankTest {
         Assertions.assertEquals(200, accountTo.getBalance());
     }
 
+    @Test
+    public void testUnSuccessIfAddNotWork() {
+
+        Account accountFrom = new Account(800);
+        Account accountTo = new Account(200);
+
+        bank.transfer(accountFrom, accountTo, 0);
+
+        Assertions.assertFalse(false);
+        Assertions.assertEquals(800, accountFrom.getBalance());
+        Assertions.assertEquals(200, accountTo.getBalance());
+    }
+
 }
 
