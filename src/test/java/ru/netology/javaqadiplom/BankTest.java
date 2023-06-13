@@ -148,6 +148,5 @@ class BankTest {
         Assertions.assertEquals(800, accountFrom.getBalance());
         Assertions.assertEquals(200, accountTo.getBalance());
     }
-
 }
 

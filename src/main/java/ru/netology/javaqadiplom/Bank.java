@@ -19,8 +19,10 @@ public class Bank {
         if (amount >= 0 && from.pay(amount)) {
             if (to.add(amount)) {
                 return true;
-            } else
+            } else {
+                from.add(amount);
                 return false;
+            }
         }
         return false;
     }
